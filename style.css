@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Khmer&family=Lobster&family=Playwrite+FR+Trad+Guides&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* General Body Styles */
+body {
+    background-color: #ccc;
+    font-family: "Roboto", sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Resume Wrapper */
+.resume {
+    margin: 15px auto;
+    max-width: 800px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+@media (min-width: 768px) {
+    .resume {
+        margin: 50px auto;
+    }
+}
+
+/* Resume Container Flex Layout */
+.resume_container {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .resume_container {
+        flex-direction: row;
+    }
+}
+
+/* Resume Sections */
+.resume_information {
+    padding: 20px;
+}
+
+@media (min-width: 768px) {
+    .resume_information {
+        padding: 50px 20px;
+        min-height: 800px;
+    }
+}
+
+/* Left Section */
+.resume_information:first-child {
+    background-color: #1E2761;
+    flex-basis: 40%;
+    color: #fff;
+    border-right: 10px solid #408EC6;
+    border-bottom: 10px solid #408EC6;
+}
+
+/* Right Section */
+.resume_information:last-child {
+    background-color: #fff;
+    flex-basis: 60%;
+    box-shadow: inset 0 5px 5px 0 rgba(175, 175, 178, 0.5);
+}
+
+@media (min-width: 768px) {
+    .resume_information:last-child {
+        box-shadow: inset 5px 0 6px 0 rgba(175, 175, 178, 0.5);
+    }
+}
+
+/* Profile Section */
+.resume_profile {
+    text-align: center;
+    padding: 10px 10px 30px;
+}
+
+.resume_profile .image {
+    width: 180px;
+    height: 180px;
+    background-color: #46dff0;
+    padding: 10px;
+    margin: 15px auto;
+    border-radius: 50%;
+    display: block;
+    object-fit: cover;
+}
+
+.resume_profile .details {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.resume_profile .details .title {
+    font-size: 28px;
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #46dff0;
+}
+
+.resume_profile .details .subtitle {
+    font-size: 18px;
+    margin: 5px 0 0;
+    color: #ddd;
+}
+
+/* Side Section Titles */
+.resume_side-section {
+    margin-bottom: 20px;
+}
+
+.resume_side-section .title {
+    position: relative;
+    font-weight: 600;
+    font-size: 16px;
+    color: #46dff0;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.resume_side-section .title::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color:#C4DFE6;
+    bottom: -5px;
+}
+
+.resume_side-section .title::after {
+    content: '';
+    position: absolute;
+    width: 30%;
+    height: 10px;
+    background-color: #46dff0;
+    bottom: -10px;
+    right: -30px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* List and Progress */
+.resume_side-section .list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.resume_side-section .progress {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 20px;
+    margin: 10px 0;
+}
+
+.resume_side-section .progress-bar {
+    background-color:#1995AD;
+    height: 100%;
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+    font-size: 12px;
+}
